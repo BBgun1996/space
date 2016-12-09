@@ -33,6 +33,9 @@ class SpaceGameWindow(arcade.Window):
 
     def animate(self, delta):
         self.world.animate(delta)
+
+    def on_key_press(self, key, key_modifiers):
+        self.world.on_key_press(key, key_modifiers)
 	
 
 
